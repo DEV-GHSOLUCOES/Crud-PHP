@@ -3,35 +3,29 @@
    <head> 
 		<title>Formulário de cadastro</title> 
 		<meta charset="utf-8">
-   	<style> 
-		body { text-align:center; } 
-	
-		.retangulo {margin: auto; border: 2px solid black; position: relative;} 
+   	<link rel="stylesheet" type="text/css" href="formularioCss.css">
 		
-		#ret {width: 450px; background-color: georgian;} 
-		
-		#ret div { 
-		margin: 20px auto; 
-		width: 50px; 
-		height: 50px; 
-		}
-	</style>
   </head>
   <body>
 
-  	<div id="ret" class="retangulo" style="text-align: center;">
-  	<br>
-  	<label id="texto"><b>CADASTRO</b></label>
-  	<br><br>
-  	<form action="inserir.php" method="post">
-  		<p >Nome do Aluno: <input type="texto" name="aluno"  /></p>
-  		<p >Disciplina : <input type="texto" name="disciplina" /></p>
-  		<p >Nota1: <input type="texto" name="nota1" /></p>
-  		<p >Nota2: <input type="texto" name="nota2" /></p>
-  		<p >Nota3: <input type="texto" name="nota3" /></p>
-  		<p ><input type="submit" name="submit" value="cadastrar" /></p>
+  	<div class="login-page">
+	  <div class="form">
+  	<form class="login-form" action="inserir.php" method="post">
+    <div class="container" id="identificacao"><h3>IDENTIFICAÇÃO</h3></div>  
+  		
+      <input type="text" placeholder="Aluno" name="aluno"/>
+      <input type="text" placeholder="Disciplina" name="disciplina"/>
+      <input type="text" placeholder="Nota1" name="nota1"/>
+      <input type="text" placeholder="Nota2" name="nota2"/>
+      <input type="text" placeholder="Nota3" name="nota3"/>
+      <button type="submit">Cadastrar</button>
 
+
+
+      
   	</form>
+  </div>
+</div>
   	
 
   </body>
