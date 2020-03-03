@@ -45,6 +45,7 @@ padding: 5px;
 			<td><?= $linha['nota1'] ?></td> 
 			<td><a href="formularioalterar.php?id=<?= $linha['id'] ?>">Alterar</td>
 			<td><a href="excluir.php?id=<?= $linha['id'] ?>">Excluir</td>
+			<td><a href="criarpdf.php?id=<?= $linha['id'] ?>">Gerar Boletim</td>
 		</tr> 
 		<?php 
 	   } 
